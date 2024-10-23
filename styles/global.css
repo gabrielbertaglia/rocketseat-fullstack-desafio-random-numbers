@@ -28,21 +28,22 @@
 
   --gradient-border: #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%;
   --gradient-background: #D586E0 0%, #91A1FA 98.93%;
-  --gradient-content: #C7C9CC 0%, #3D3D3D 100%;
+  --gradient-content: linear-gradient(to right, var(--content-secondary) 0%, var(--background-gray) 100%);
 
   --ff-sora: "Sora", sans-serif;
   --ff-roboto-mono: "Roboto Mono", monospace;
   --ff-roboto-flex: "Roboto Flex", sans-serif;
 
-  --display-large: 800 72px/130% var(--ff-sora) uppercase;
-  --display-medium: 800 40px/130% var(--ff-sora) uppercase;
-  --display-small: 700 32px/130% var(--ff-sora) uppercase;
+  --display-large: 800 72px/130% var(--ff-sora);
+  --display-medium: 800 40px/130% var(--ff-sora);
+  --display-small: 700 32px/130% var(--ff-sora);
 
-  --overline: 700 32px/150% var(--ff-roboto-mono) uppercase;
+  --overline: 700 16px/150% var(--ff-roboto-mono);
 
   --paragraph-large: 500 16px/150% var(--ff-roboto-flex);
   --paragraph-medium: 500 14px/150% var(--ff-roboto-flex);
   --paragraph-small: 500 12px/150% var(--ff-roboto-flex);
+
   --label-medium: 700 20px/150% var(--ff-roboto-flex);
   --label-small: 700 16px/150% var(--ff-roboto-flex);
 }
@@ -71,8 +72,15 @@ body {
   } */
 }
 
+main {
+  padding-top: 2.875rem;
+}
+
 /* Tablets and small devices */
 @media (min-width: 37.5rem) {
+  :root {
+    /* --overline: 700 32px/150% var(--ff-roboto-mono); */
+  }
   body {
 
     /* width: 100%;
@@ -92,9 +100,13 @@ body {
   }
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 992px) {
   body {
     padding-top: 4.625rem;
     padding-inline: 8.375rem;
+  }
+
+  main {
+    padding-top: 7.9375rem;
   }
 }

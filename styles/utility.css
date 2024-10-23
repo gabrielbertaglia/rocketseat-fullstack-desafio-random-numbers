@@ -3,9 +3,36 @@
   margin: 0 auto;
 }
 
+.overline {
+  /* width: 100%; */
+  font: var(--overline);
+  background: var(--gradient-content);
+  text-transform: uppercase;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h1 {
+  font: var(--display-medium);
+  color: var(--content-primary);
+  text-transform: uppercase;
+}
+
+.label {
+  font: var(--label-medium);
+  color: var(--content-primary);
+  text-transform: uppercase;
+}
+
 /* Tablets and small devices */
 @media (min-width: 600px) {
   .logo {
     margin: 0;
+  }
+
+  .h1 {
+    font: var(--display-large);
   }
 }
