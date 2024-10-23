@@ -54,8 +54,15 @@ html {
 
 /* Mobile Styles (default) */
 body {
-  background-color: var(--background-primary);
-  /* font-family: var(--ff-inter);
+  height: 100vh;
+  background:
+  var(--background-primary)
+  url(/assets/img/shapes.svg)
+  no-repeat
+  center
+  / cover;
+
+  /*
   padding-inline: 32px;
   padding-block: 34px;
 
