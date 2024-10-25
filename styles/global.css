@@ -26,8 +26,15 @@
   --accent-lime: #D1DC97;
   --accent-red: #E9A9B3;
 
-  --gradient-border: #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%;
-  --gradient-background: #D586E0 0%, #91A1FA 98.93%;
+  --gradient-border: linear-gradient(to right,
+      #77c0af 0%,
+      #d1dc97 14.84%,
+      #e9a9b3 32.15%,
+      #d586e0 65.79%,
+      #91a1fa 84.58%);
+  --gradient-background: linear-gradient(to right,
+      #d586e0 0%,
+      #91a1fa 98.93%);
   --gradient-content: linear-gradient(to right, var(--content-secondary) 0%, var(--background-gray) 100%);
 
   --ff-sora: "Sora", sans-serif;
@@ -57,14 +64,12 @@ html {
 body {
   height: 100vh;
   background:
-  var(--background-primary)
-  url(/assets/img/shapes.svg)
-  no-repeat
-  center
-  / cover;
+    var(--background-primary) url(/assets/img/shapes.svg) no-repeat center / cover;
 
   padding-block: 2.75rem;
   padding-inline: 2.25rem;
+
+  color: var(--content-primary);
   /* font-family: var(--ff-inter);
 
   .logo {
@@ -81,6 +86,7 @@ main {
   :root {
     /* --overline: 700 32px/150% var(--ff-roboto-mono); */
   }
+
   body {
 
     /* width: 100%;

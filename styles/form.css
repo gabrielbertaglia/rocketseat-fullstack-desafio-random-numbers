@@ -6,3 +6,65 @@
   gap: 40px;
 
 }
+
+form {
+  & .fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-group {
+  text-align: center;
+}
+
+.label {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-group:hover .label,
+.input-group:focus-within .label {
+  color: var(--brand);
+}
+
+input[type="text"] {
+  width: 5.375rem;
+  height: 3.5rem;
+  text-align: center;
+  font: var(--display-small);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: var(--background-secondary);
+  color: white;
+  transition: border 0.4s ease, background 0.4s ease;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+input[type="text"]:hover {
+  border: 1px solid transparent;
+  background-image: linear-gradient(#24222E, #24222E), var(--gradient-border);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#24222E, #24222E), var(--gradient-border);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}

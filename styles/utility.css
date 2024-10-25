@@ -26,13 +26,21 @@
   text-transform: uppercase;
 }
 
+.p-medium {
+  font: var(--paragraph-medium);
+}
+
 /* Tablets and small devices */
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .logo {
     margin: 0;
   }
 
   .h1 {
     font: var(--display-large);
+  }
+
+  .p-medium {
+    font: var(--paragraph-large);
   }
 }
