@@ -17,9 +17,10 @@ form {
 
 .container {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  gap: 10px;
   align-items: center;
-  margin: 50px auto;
+  margin: auto;
   width: 100%;
   max-width: 500px;
 }
@@ -67,4 +68,28 @@ input[type="text"]:focus {
   background-image: linear-gradient(#24222E, #24222E), var(--gradient-border);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+}
+
+form button {
+  /* margin-top: 2.5rem;
+
+  border: 1px solid transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  background-color: var(--background-tertiary);
+  color: #FFFFFF;
+  font: var(--label-small); */
+
+
+}
+
+form button:hover {
+  /* border-image: var(--gradient-border); */
 }
