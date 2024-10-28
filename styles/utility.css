@@ -30,6 +30,10 @@
   font: var(--paragraph-medium);
 }
 
+.p-small {
+  font: var(--paragraph-small);
+}
+
 /* Tablets and small devices */
 @media (min-width: 992px) {
   .logo {

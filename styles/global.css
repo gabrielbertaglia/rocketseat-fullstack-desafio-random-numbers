@@ -62,11 +62,11 @@ html {
 
 /* Mobile Styles (default) */
 body {
-  height: 100vh;
+  height: 100%;
   background:
     var(--background-primary) url(/assets/img/shapes.svg) no-repeat center / cover;
 
-  padding-block: 2.75rem;
+  padding-block: 2.75rem !important;
   padding-inline: 2.25rem;
 
   color: var(--content-primary);
@@ -77,9 +77,6 @@ body {
   } */
 }
 
-main {
-  padding-top: 2.875rem;
-}
 
 /* Tablets and small devices */
 @media (min-width: 37.5rem) {
@@ -89,10 +86,10 @@ main {
 
   body {
 
-    /* width: 100%;
     height: 100vh;
+    width: 100%;
 
-    padding-block: 0px;
+   /*  padding-block: 0px;
 
     display: flex;
     align-items: center;

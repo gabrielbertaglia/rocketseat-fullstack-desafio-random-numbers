@@ -1,7 +1,19 @@
 main {
+  padding-top: 44px;
+
+
   & header {
     display: flex;
     flex-direction: column;
     gap: 8px;
+  }
+}
+
+
+@media (min-width: 992px) {
+
+
+  main {
+    padding-top: 7.9375rem;
   }
 }
