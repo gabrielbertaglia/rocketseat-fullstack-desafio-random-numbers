@@ -41,7 +41,7 @@
   --ff-roboto-mono: "Roboto Mono", monospace;
   --ff-roboto-flex: "Roboto Flex", sans-serif;
 
-  --display-large: 800 72px/130% var(--ff-sora);
+  --display-large: 800 72px/120% var(--ff-sora);
   --display-medium: 800 40px/130% var(--ff-sora);
   --display-small: 700 32px/130% var(--ff-sora);
 
@@ -51,7 +51,7 @@
   --paragraph-medium: 500 14px/150% var(--ff-roboto-flex);
   --paragraph-small: 500 12px/150% var(--ff-roboto-flex);
 
-  --label-medium: 700 20px/150% var(--ff-roboto-flex);
+  --label-medium: 700 1.25rem/150% var(--ff-roboto-flex);
   --label-small: 700 16px/150% var(--ff-roboto-flex);
 }
 

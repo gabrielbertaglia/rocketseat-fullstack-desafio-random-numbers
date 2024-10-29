@@ -5,6 +5,11 @@
   flex-direction: column;
   gap: 40px;
 
+  .title-form {
+    .label {
+      font-size: 18px;
+    }
+  }
 }
 
 form {
@@ -92,4 +97,29 @@ form button {
 
 form button:hover {
   /* border-image: var(--gradient-border); */
+}
+
+@media (min-width: 992px) {
+
+  .container {
+    margin: inherit;
+  }
+
+  .content-form {
+    padding-top: 42px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .title-form {
+      .label {
+        font: var(--label-medium);
+      }
+      .p-medium {
+        font: var(--paragraph-large);
+      }
+    }
+
+  }
 }

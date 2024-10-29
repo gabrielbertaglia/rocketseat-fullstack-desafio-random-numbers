@@ -1,26 +1,3 @@
 footer {
-
   padding-top: 80px;
-
-  .questions {
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-
-    .item {
-      display: flex;
-      gap: 8px;
-
-      .p-medium {
-        color: var(--brand);
-      }
-
-      img {
-        margin-bottom: auto;
-        filter: brightness(0) saturate(100%) invert(65%) sepia(23%) saturate(892%) hue-rotate(230deg) brightness(94%) contrast(92%);
-
-      }
-    }
-
-  }
 }

@@ -34,6 +34,12 @@
   font: var(--paragraph-small);
 }
 
+.only-desktop {
+  display: none;
+}
+
+
+
 /* Tablets and small devices */
 @media (min-width: 992px) {
   .logo {
@@ -46,5 +52,25 @@
 
   .p-medium {
     font: var(--paragraph-large);
+  }
+
+  .only-mobile {
+    display: none;
+  }
+
+  .only-desktop {
+    display: inherit;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .width-508 {
+    max-width: 508px;
+  }
+
+  .width-616 {
+    max-width: 616px;
   }
 }

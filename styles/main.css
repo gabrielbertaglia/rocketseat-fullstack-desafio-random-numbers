@@ -15,5 +15,8 @@ main {
 
   main {
     padding-top: 7.9375rem;
+
+    display: flex;
+    justify-content: space-between;
   }
 }
