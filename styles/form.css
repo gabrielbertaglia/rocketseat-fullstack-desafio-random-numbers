@@ -12,7 +12,7 @@
   }
 }
 
-form {
+.form-inputs {
   & .fields {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,28 @@
+.form-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.result-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+  .label {
+    font-size: 20px;
+  }
+
+  .overline-default {
+    color: var(--content-secondary);
+  }
+}

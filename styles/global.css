@@ -47,12 +47,15 @@
 
   --overline: 700 16px/150% var(--ff-roboto-mono);
 
+  --h2: 700 48px/150% var(--ff-roboto-mono);
+
   --paragraph-large: 500 16px/150% var(--ff-roboto-flex);
   --paragraph-medium: 500 14px/150% var(--ff-roboto-flex);
   --paragraph-small: 500 12px/150% var(--ff-roboto-flex);
 
   --label-medium: 700 1.25rem/150% var(--ff-roboto-flex);
   --label-small: 700 16px/150% var(--ff-roboto-flex);
+
 }
 
 html {
