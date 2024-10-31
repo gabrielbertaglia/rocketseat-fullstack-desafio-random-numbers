@@ -54,7 +54,7 @@
       </div>
     </div>
     <div class="width-616">
-      <!-- <div class="content-form">
+      <div class="content-form" id="content-form">
         <div class="title-form">
           <span class="label">Quero sortear:</span>
           <p class="p-medium">Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na
@@ -68,15 +68,15 @@
             <div class="container">
               <div class="input-group">
                 <div class="label">NÚMEROS</div>
-                <input type="text" required>
+                <input name="numbers-quantity" id="numbers-quantity" value="2" type="text" required>
               </div>
               <div class="input-group">
                 <div class="label">DE</div>
-                <input type="text" required>
+                <input name="min-number" value="1" name="min-number" id="min-number" type="text" required>
               </div>
               <div class="input-group">
                 <div class="label">DE</div>
-                <input type="text" required>
+                <input name="max-number" value="100" id="max-number" type="text" required>
               </div>
             </div>
 
@@ -85,33 +85,33 @@
               <span>Não repetir número</span>
             </div>
 
-            <button type="submit"><span>SORTEAR</span> <img src="/assets/icons/arrow-right.svg" alt=""></button>
+            <button id="btn-draw" type="submit"><span>SORTEAR</span> <img src="/assets/icons/arrow-right.svg"
+                alt=""></button>
           </div>
 
         </form>
-      </div> -->
+      </div>
 
-      <form class="form-result">
+      <div class="div-result" id="div-result">
 
         <div class="number-draw-results">
           <div class="result-title">
             <div class="label">Resultado do sorteio</div>
-            <div class="overline-default">1º resultado</div>
+            <p class="overline-default"><span id="result-number">0</span> resultado</p>
           </div>
 
-          <div class="draw-numbers-container">
-            <div class="number-container">
-
-              <h3>23</h3>
-            </div>
+          <div class="draw-numbers-container" id="draw-numbers-container">
+            <!-- <div class="number-container"> -->
+            <!-- <h3>23</h3> -->
+            <!-- </div> -->
             <!-- <h3>12</h3> -->
           </div>
-          <button type="reset">
+          <button id="btn-draw-again" type="reset">
             <span>SORTEAR NOVAMENTE</span>
             <img src="/assets/icons/replay.svg" alt="">
           </button>
         </div>
-        </form>
+      </div>
     </div>
 
 
@@ -142,6 +142,7 @@
     </footer>
   </main>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
